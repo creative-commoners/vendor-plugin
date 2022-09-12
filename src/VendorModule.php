@@ -17,7 +17,7 @@ class VendorModule extends Library
     /**
      * Default replacement folder for 'vendor'
      */
-    const DEFAULT_TARGET = 'resources';
+    const DEFAULT_TARGET = '_resources';
 
     /**
      * Build a vendor module library

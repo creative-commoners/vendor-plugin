@@ -117,7 +117,7 @@ class VendorExposeTask
         $this->filesystem->ensureDirectoryExists($resourcesPath);
 
         // Copy missing resources
-        $files = new DirectoryIterator(__DIR__.'/../resources');
+        $files = new DirectoryIterator(__DIR__.'/../_resources');
         foreach ($files as $file) {
             $targetPath = $resourcesPath . DIRECTORY_SEPARATOR . $file->getFilename();
             if ($file->isFile() && !file_exists($targetPath ?? '')) {
